@@ -1,4 +1,4 @@
-public class Main {
+public class variaBles {
     public static void main(String[] args) {
         String thongBao = "Xin chào";
         String hoVaTen = "Cao Tran Trong Hieu";
