@@ -22,5 +22,9 @@ public class typeCasting {
         int h = (int) f;
         System.out.println("g=:" + g);
         System.out.println("h=:" + h);
+        // ép kiểu giữa bến nguyên tử và dối tượng
+        int x = new Integer(32);
+        System.out.println("x=:" + x);
+
     }
 }
