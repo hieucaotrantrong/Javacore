@@ -9,6 +9,7 @@ public class forExample {
         // nhập dữ liệu từ bàn phím
         System.out.println("Ho va ten:");
         String hoVaTen = scanner.nextLine();
+        System.out.println("Ho va ten:" + hoVaTen);
 
     }
 }
