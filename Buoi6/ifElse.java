@@ -1,7 +1,8 @@
+package Buoi6;
 
 import java.util.Scanner;
 
-public class  test {
+public class ifElse {
     // câu lệnh ifelse trong java
     public static void main(String[] args) {
         int n;
