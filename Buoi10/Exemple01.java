@@ -1,5 +1,7 @@
 package Buoi10;
 
+import java.util.Arrays;
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class Exemple01 {
@@ -28,6 +30,33 @@ public class Exemple01 {
         }
         // Xuất các giá trị các phần tử của mảng
         System.out.println(("\nMang ban dau :"));
+        for (int i = 0; i < n; i++) {
+            System.out.println(A[i] + "\t");
+        }
+        // Tìm giá trị lớn nhất, nhỏ nhất
+        int max = A[0];
+        int min = A[0];
+        for (int i = 0; i < n; i++) {
+            if (A[i] < min) {
+                min = A[i];
+            }
+            if (A[i] > max) {
+                max = A[i];
+            }
+        }
+        System.out.println("\nPhan tu lon nhat mang la :" + max);
+        System.out.println("\nPhan tu nho nhat mang la :" + min);
+        // 3 Đếm số phần tử là số chẵn
+        int soPhanTuChan = 0;
+        for (int i = 0; i < n; i++) {
+            if (A[i] % 2 == 0) {
+                soPhanTuChan++;
+            }
+        }
+        System.out.println("\nSo phan tu chan co trong mang=" + soPhanTuChan);
+        // sắp xếp mảng tăng dần
+        Arrays.sort(A);
+        System.out.println("\nMang sau khi sap xep la: ");
         for (int i = 0; i < n; i++) {
             System.out.println(A[i] + "\t");
         }
