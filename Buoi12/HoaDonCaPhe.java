@@ -7,7 +7,7 @@ public class HoaDonCaPhe {
     private double giaTien1Kg;
     private double khoiLuong;
 
-    // contructor
+    // constructor
     public HoaDonCaPhe(String tenLoaiCaPhe, double giaTien1Kg, double khoiLuong) {
         this.tenLoaiCaPhe = tenLoaiCaPhe;
         this.giaTien1Kg = giaTien1Kg;
