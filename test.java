@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class test {
-   int x = 5;
 
    public static void main(String[] args) {
-      test Date = new test();
-      System.out.println(Date.x);
+      for (int i = 0; i < 1000; i += 2) {
+         System.out.println(i);
+      }
    }
 
 }
