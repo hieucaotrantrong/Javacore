@@ -52,13 +52,13 @@ public class Book {
     }
 
     public void importExportBook() {
-        System.out.println("Import codeBook: ");
+        System.out.println("Enter codeBook: ");
         codeBook = scanner.nextLine();
-        System.out.println("Import author :");
+        System.out.println("Enter author :");
         author = scanner.nextLine();
-        System.out.println("Import priceBook: ");
+        System.out.println("Enter priceBook: ");
         price = scanner.nextDouble();
-        System.out.println("Import quantity :");
+        System.out.println("Enter quantity :");
         quantity = scanner.nextInt();
 
     }
