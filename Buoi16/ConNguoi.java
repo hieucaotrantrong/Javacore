@@ -3,7 +3,7 @@ package Buoi16;
 public class ConNguoi {
     private String hoVaten;
     private int namSinh;
-
+// 
     // constructor
     public ConNguoi(String hoVaten, int namSinh) {
         this.hoVaten = hoVaten;

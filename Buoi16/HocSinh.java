@@ -1,4 +1,5 @@
 package Buoi16;
+//  kế thừa trong java
 
 public class HocSinh extends ConNguoi {
 
