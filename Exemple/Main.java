@@ -20,7 +20,8 @@ public class Main {
         System.out.println("Enter information Text Book :");
         for (int i = 0; i < numberTextBook; i++) {
             System.out.println("Enter information Book :" + (i + 1) + ":");
-            TextBook textBook = new TextBook(null, arithMeticmeanPrice, numberBookReferences);
+            TextBook textBook = new TextBook(null, totalpriceBookRedferences, i, null, null, arithMeticmeanPrice,
+                    numberBookReferences, scanner);
             textBook.importBook();
             arrTextBook.add(textBook);
         }
@@ -28,7 +29,8 @@ public class Main {
         System.out.println("Enter information Book References : ");
         for (int i = 0; i < numberBookReferences; i++) {
             System.out.println("Enter information book :" + (i + 1) + ":");
-            BookReference bookReference = new BookReference(i, arithMeticmeanPrice);
+            BookReference bookReference = new BookReference(null, totalpriceBookRedferences, i, null, i,
+                    arithMeticmeanPrice, scanner, numberBookReferences);
             bookReference.importBook();
             arrBookReferences.add(bookReference);
         }

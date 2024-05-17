@@ -2,18 +2,23 @@ package Exemple;
 
 import java.util.Scanner;
 
-public class BookReference {
+public class BookReference extends Book {
+
+    public BookReference(String codeBoook, double price, int quantity, String author, double taxation, double price2,
+            Scanner scanner, int number) {
+        super(codeBoook, price, quantity, author);
+        this.taxation = taxation;
+        price = price2;
+        this.scanner = scanner;
+        this.number = number;
+    }
+
     private double taxation;
     private double price;
     private Scanner scanner;
     private int number;
 
     // Constructor
-    public BookReference(double taxation, double price) {
-        this.taxation = taxation;
-        this.price = price;
-        this.scanner = new Scanner(System.in);
-    }
 
     public double getTaxation() {
         return taxation;

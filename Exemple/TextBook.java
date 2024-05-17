@@ -2,22 +2,27 @@ package Exemple;
 
 import java.util.Scanner;
 
-public class TextBook {
+import Exemple1.book;
+
+public class TextBook extends Book {
     private String status;
     private double price;
     private int number;
     private Scanner scanner;
 
     // Constructor
-    public TextBook(String status, double price, int number) {
-        this.status = status;
-        this.price = price;
-        this.number = number;
-        this.scanner = new Scanner(System.in);
-    }
 
     public String getStatus() {
         return status;
+    }
+
+    public TextBook(String codeBoook, double price, int quantity, String author, String status, double price2,
+            int number, Scanner scanner) {
+        super(codeBoook, price, quantity, author);
+        this.status = status;
+        price = price2;
+        this.number = number;
+        this.scanner = scanner;
     }
 
     public double getPrice() {
