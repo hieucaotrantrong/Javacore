@@ -1,7 +1,7 @@
 package Exemple18;
 
 public class Main {
-    // ke thua 2 tang
+    // ke thua thu bac
     public static void main(String[] args) {
         Dog dog = new Dog(null);
         dog.eat();
