@@ -1,7 +1,7 @@
 package Buoi17;
 
 public class Main {
-    // Ghì đè phương thức
+    // Ghì đè phương thức overriding
     public static void main(String[] args) {
 
         System.out.println("----Test dog---");

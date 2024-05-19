@@ -11,6 +11,6 @@ public class Main {
         System.out.println("Giam gia cua hoa don :" + hoadon.giamGia(10));
         System.out.println("Giam gia cua hoadon2 :" + hoadon2.giamGia(10));
         System.out.println("Sau giam gia cua hoa don :" + hoadon.giaSauKhiGiam(10));
-        System.out.println("Sau giam gia cua hoa on2 :" + hoadon2.giaSauKhiGiam(10));
+        System.out.println("Sau giam gia cua hoa don2 :" + hoadon2.giaSauKhiGiam(10));
     }
 }

@@ -10,8 +10,8 @@ public class main {
         System.out.println(Mydate);
         System.out.println(Mydate1);
         System.out.println(Mydate2);
-        System.out.println("Mydate so sanh bang Mydate1 =" + Mydate.equals(Mydate1));
-        System.out.println("Mydate so sanh bang mydate2 =" + Mydate.equals(Mydate2));
+        System.out.println("Mydate so sanh bang Mydate1 = " + Mydate.equals(Mydate1));
+        System.out.println("Mydate so sanh bang mydate2 = " + Mydate.equals(Mydate2));
         System.out.println("Hashcode Mydate =" + Mydate.hashCode());
         System.out.println("Hashcode Mydate1 =" + Mydate.hashCode());
         System.out.println("Hashcode Mydate2 = " + Mydate.hashCode());
