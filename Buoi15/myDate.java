@@ -5,6 +5,7 @@ public class myDate {
     private int month;
     private int year;
 
+    // phuong thuc equal and hascode
     // constructor
     public myDate(int day, int month, int year) {
         if (day >= 1 && day <= 31) {
