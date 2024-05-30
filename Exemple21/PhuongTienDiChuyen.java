@@ -1,5 +1,6 @@
 package Exemple21;
 
+// Bài tập về abstract trong java
 public abstract class PhuongTienDiChuyen {
     protected String tenLoaiPhuongTien;
     protected HangSanXuat hangSanXuat;

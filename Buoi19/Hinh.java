@@ -1,5 +1,6 @@
 package Buoi19;
 
+//  bai tap ve ke thua va abstract
 public abstract class Hinh {
     protected ToaDo toaDo;
 

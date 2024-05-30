@@ -15,7 +15,6 @@ public class NhanVien {
     protected String loaiNhanVien() {
         return "";
     }
-
     public void xuatThongTin() {
         System.out.println("----Nhan Vien----" + ten + "---");
         System.out.println("--Loai Nhan Vien---" + loaiNhanVien());

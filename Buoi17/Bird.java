@@ -9,15 +9,11 @@ public class Bird extends Animal {
 
     @Override
     public void eat() {
-        // TODO Auto-generated method stub
-        super.eat();
         System.out.println("Toi dang an con sau");
     }
 
     @Override
     public void makeSound() {
-        // TODO Auto-generated method stub
-        super.makeSound();
         System.out.println("Toi dang hot liu lo");
     }
 
