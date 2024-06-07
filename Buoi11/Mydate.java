@@ -5,7 +5,7 @@ public class Mydate {
     private int month;
     private int year;
 
-    // cách xây dựng lpows và phương thức khởi tạo
+    // cách xây dựng lop và phương thức khởi tạo
     // A constructor
     public Mydate(int d, int m, int y) {
         this.day = d;
