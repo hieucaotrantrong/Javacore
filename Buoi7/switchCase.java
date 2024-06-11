@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class switchCase {
     public static void main(String[] args) {
-        int n;
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap vao so nguyen tu 0 toi 8:");
-        n = sc.nextInt();
+        int n = sc.nextInt();
         switch (n) {
             case 2:
                 System.out.println("Thu 2");

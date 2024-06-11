@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
-    // Làm việc với chuỗi trong java
+
     /**
-     * @param args
+     * Làm việc với chuỗi trong java
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

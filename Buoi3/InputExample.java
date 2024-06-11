@@ -14,7 +14,7 @@ public class InputExample {
         System.out.println("Nhap vao diem thi:");
         float diemThi = scanner.nextFloat();
         // in ra màn hình
-        System.out.println("-------");
+        System.out.println("------------------");
         System.out.println("Ho va ten:" + hoVaTen);
         System.out.println("Ma sinh vien:" + maSinhVien);
         System.out.println("Diem thi" + diemThi);

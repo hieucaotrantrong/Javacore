@@ -1,4 +1,5 @@
 public class variaBles {
+    // khái niệm về biến và khai báo biến
     public static void main(String[] args) {
         String thongBao = "Xin chào";
         String hoVaTen = "Cao Tran Trong Hieu";
@@ -9,4 +10,3 @@ public class variaBles {
         System.out.println("Lop:" + lop);
     }
 }
-// khái niệm về biến và khai báo biến
