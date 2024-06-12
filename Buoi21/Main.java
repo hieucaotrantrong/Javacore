@@ -19,6 +19,9 @@ public class Main {
             System.out.println("Vi tri : " + i + " la " + ":" + name.charAt(i));
         }
         // ----------Getchar---------------
+        /*
+         * mỗi phần tử sẽ trừ đi 1 trước khi trả về giá trị
+         */
         System.out.println("---------------");
         char[] arr = new char[10];
         name.getChars(1, 3, arr, 0);
@@ -26,6 +29,9 @@ public class Main {
             System.out.println("Gia tri cua mang tai " + i + " la " + ":" + arr[i]);
         }
         // -----------getBytes---------------
+        /*
+         * Trả về thứ tự trong bảng ASCII
+         */
         System.out.println("------------------");
         byte[] arr1 = name.getBytes();
         for (byte b : arr1) {
