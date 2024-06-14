@@ -21,7 +21,6 @@ public class Main3 {
          * Hàm to UpperCase=> chuyển về viết hoa
          */
         System.out.println("--------------------------");
-        System.out.println("--------------------------");
         String name7 = name1.toLowerCase();
         String name8 = name1.toUpperCase();
         System.out.println("Name7=" + name7);

@@ -56,6 +56,7 @@ public class SinhVien {
         this.lop = lop;
     }
 
+    // ---------------Method----------------
     public String layTenKhoa() {
         return this.lop.getTenKhoa();
     }
