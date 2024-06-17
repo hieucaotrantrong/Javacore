@@ -1,4 +1,4 @@
-package Buoi23;
+package Buoi22;
 
 public class SinhVien implements Comparable<SinhVien> {
     private int maSinhVien;
