@@ -1,75 +1,65 @@
 package TestCase1;
 
 public class Vehicle {
+    private String tenChuXe;
     private String nhanHieu;
     private float giaTri;
-    private int dungTichXILanh;
-    private String tenChuXe;
+    private int dungTichXiLanh;
 
-    /*
-     * Constructor
-     * 
-     */
-    public Vehicle(String nhanHieu, String tenChuXe, float giaTri, int dungTichXILanh) {
-        this.nhanHieu = nhanHieu;
+    // -----------Constructor------------
+    public Vehicle(String tenChuXe, String nhanHieu, float giaTri, int dungTichXiLanh) {
         this.tenChuXe = tenChuXe;
+        this.nhanHieu = nhanHieu;
         this.giaTri = giaTri;
-        this.dungTichXILanh = dungTichXILanh;
-    }
-    /*
-     * Get Set
-     */
-
-    public String getNhanHieu() {
-        return nhanHieu;
+        this.dungTichXiLanh = dungTichXiLanh;
     }
 
-    public float getGiaTri() {
-        return giaTri;
-    }
-
-    public int getDungTichXILanh() {
-        return dungTichXILanh;
-    }
-
+    // ----------GetSet------------------
     public String getTenChuXe() {
         return tenChuXe;
-    }
-
-    public void setNhanHieu(String nhanHieu) {
-        this.nhanHieu = nhanHieu;
-    }
-
-    public void setGiaTri(float giaTri) {
-        this.giaTri = giaTri;
-    }
-
-    public void setDungTichXILanh(int dungTichXILanh) {
-        this.dungTichXILanh = dungTichXILanh;
     }
 
     public void setTenChuXe(String tenChuXe) {
         this.tenChuXe = tenChuXe;
     }
 
-    /*
-     * Method
-     */
+    public String getNhanHieu() {
+        return nhanHieu;
+    }
+
+    public void setNhanHieu(String nhanHieu) {
+        this.nhanHieu = nhanHieu;
+    }
+
+    public float getGiaTri() {
+        return giaTri;
+    }
+
+    public void setGiaTri(float giaTri) {
+        this.giaTri = giaTri;
+    }
+
+    public int getDungTichXiLanh() {
+        return dungTichXiLanh;
+    }
+
+    public void setDungTichXiLanh(int dungTichXiLanh) {
+        this.dungTichXiLanh = dungTichXiLanh;
+    }
+
+    // ---------------Method------------------
     public double tinhThue() {
-        if (dungTichXILanh < 100) {
+        if (dungTichXiLanh < 100) {
             return giaTri * 0.01;
-        } else if (dungTichXILanh <= 200) {
+        } else if (dungTichXiLanh <= 200) {
             return giaTri * 0.03;
         } else {
             return giaTri * 0.05;
         }
     }
 
-    public void hienThiThongTinxe() {
-        System.out.printf("Hien thi thong tin cac loai xe", tenChuXe, nhanHieu, dungTichXILanh, giaTri, tinhThue());
+    public void hienThiThongTinXe() {
+        System.out.printf("%-20s %-15s %-10d %15.2f %15.2f%n",
+                tenChuXe, nhanHieu, dungTichXiLanh, giaTri, tinhThue());
     }
-    /*
-     * To String
-     */
-
 }

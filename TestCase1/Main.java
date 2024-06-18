@@ -15,16 +15,17 @@ public class Main {
             System.out.println("1:Nhap thong tin va tao doi tuong");
             System.out.println("2: Xuat bang ke tien thue truoc ba cua cac loai xe");
             System.out.println("3: Thoat");
+            System.out.println("Lua chon cua ban :");
             luaChon = scanner.nextInt();
             scanner.nextLine();
             switch (luaChon) {
                 case 1:
                     for (int i = 0; i < danhSachXe.length; i++) {
-                        System.out.println("Nhap ten chu xe:" + (i + 1) + ": ");
+                        System.out.println("Nhap ten chu xe:" + (i + 1) + ":");
                         String tenChuXe = scanner.nextLine();
-                        System.out.println("Nhap nhan hieu xe" + (i + 1) + ": ");
+                        System.out.println("Nhap nhan hieu xe" + (i + 1) + ":");
                         String nhanHieu = scanner.nextLine();
-                        System.out.println("Nhap gia tri xe " + (i + 1) + ": ");
+                        System.out.println("Nhap gia tri xe " + (i + 1) + ":");
                         float giaTri = scanner.nextInt();
                         System.out.println("Nhap dung tich xy lanh xe " + (i + 1) + ":");
                         int dungTichXILanh = scanner.nextInt();
@@ -38,7 +39,7 @@ public class Main {
                     System.out.println("=".repeat(80));
                     for (Vehicle xe : danhSachXe) {
                         if (xe != null) {
-                            xe.hienThiThongTinxe();
+                            xe.hienThiThongTinXe();
                         }
                     }
                     break;
