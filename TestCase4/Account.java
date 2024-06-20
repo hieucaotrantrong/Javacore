@@ -70,7 +70,7 @@ public class Account {
     @Override
     public String toString() {
         NumberFormat currencyFormatter = NumberFormat.getNumberInstance(new Locale("vi", "VN"));
-        return "So tai khoan" + soTaiKhoan + ",Ten tai khoan" + tenTaiKhoan + ",So tien trong tai khoan:"
+        return "So tai khoan : " + soTaiKhoan + ",Ten tai khoan : " + tenTaiKhoan + ",So tien trong tai khoan : "
                 + currencyFormatter.format(soTienTrongTaiKhoan);
     }
 

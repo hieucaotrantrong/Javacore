@@ -2,7 +2,13 @@ package Buoi22;
 
 import java.util.Arrays;
 
+/*
+ * Tìm kiếm, sắp xếp, copy mảng bằng các hàm có sẵn trong Java
+ */
 public class Main {
+    /*
+     * Hàm sắp xếp giảm giần
+     */
     public static int[] reverse(int[] x) {
         int[] rs = new int[x.length];
         int index = 0;
@@ -39,4 +45,5 @@ public class Main {
         a = Main.reverse(a);
         System.out.println("A sau khi sap xep giam dan" + Arrays.toString(a));
     }
+
 }

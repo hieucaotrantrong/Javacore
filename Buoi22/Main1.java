@@ -11,11 +11,14 @@ public class Main1 {
         /*
          * hàm sắp xếp
          */
-        /*
-         * Chưa hoàn thành đợi xử lí
-         */
+
         System.out.println("Ban dau :" + Arrays.toString(a_sv));
         Arrays.sort(a_sv);
-        System.out.println("Sau khi sap xep" + Arrays.toString(a_sv));
+        System.out.println("-----------------------");
+        System.out.println("Sau khi sap xep : " + Arrays.toString(a_sv));
+        /*
+         * hàm tìm kiếm
+         */
+        System.out.println("Tim kiem hieu : " + Arrays.binarySearch(a_sv, sinhVien1));
     }
 }
