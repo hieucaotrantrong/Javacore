@@ -40,14 +40,14 @@ public class Main {
         Calendar time = Calendar.getInstance();
         System.out.println(
                 time.get(Calendar.DATE) + "-" + (time.get(Calendar.MONTH) + 1) + "-" + time.get(Calendar.YEAR));
-        time.add(Calendar.HOUR, 30);
+        time.add(Calendar.HOUR, 10);
         System.out.println(
                 time.get(Calendar.DATE) + "-" + (time.get(Calendar.MONTH) + 1) + "-" + time.get(Calendar.YEAR));
         time.add(Calendar.DATE, 14);
         System.out.println(
                 time.get(Calendar.DATE) + "-" + (time.get(Calendar.MONTH) + 1) + "-" + time.get(Calendar.YEAR));
         /*
-         * DateDormat
+         * DateDformat
          */
         DateFormat dateFormat = new SimpleDateFormat();
         System.out.println(dateFormat.format(date));
