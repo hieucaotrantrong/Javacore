@@ -100,8 +100,8 @@ public class HangThucPham {
 
     public static void main(String[] args) {
         try {
-            Date ngaySanXuat = (Date) dateFormat.parse("10/10/2023");
-            Date ngayHetHan = (Date) dateFormat.parse("10/10/2024");
+            Date ngaySanXuat = dateFormat.parse("10/10/2023");
+            Date ngayHetHan = dateFormat.parse("10/10/2024");
             HangThucPham hangThucPham = new HangThucPham("001", "Sua", 1500, ngaySanXuat, ngayHetHan);
             System.out.println(hangThucPham);
             HangThucPham hangThucPham2 = new HangThucPham("002");
