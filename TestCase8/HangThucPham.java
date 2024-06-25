@@ -1,6 +1,6 @@
 package TestCase8;
 
-import java.sql.Date;
+import java.util.Date;
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -29,10 +29,10 @@ public class HangThucPham {
             throw new IllegalArgumentException("Ma Hang khong duoc de rong");
         }
         this.maHang = maHang;
-        this.donGia = donGia;
-        this.tenHang = tenHang;
-        this.ngayHetHan = ngayHetHan;
-        this.ngaySanXuat = ngaySanXuat;
+        setTenHang(tenHang);
+        setDonGia(donGia);
+        setNgaySanXuat(ngaySanXuat);
+        setNgayHetHan(ngayHetHan);
     }
 
     /*
@@ -52,16 +52,12 @@ public class HangThucPham {
     /*
      * get Set
      */
-    public String getMaHang() {
-        return maHang;
-    }
-
     public String getTenHang() {
         return tenHang;
     }
 
     public void setTenHang(String tenHang) {
-        this.tenHang = tenHang;
+        this.tenHang = tenHang != null ? tenHang : "Khong xac dinh";
     }
 
     public double getDonGia() {
@@ -69,7 +65,7 @@ public class HangThucPham {
     }
 
     public void setDonGia(double donGia) {
-        this.donGia = donGia;
+        this.donGia = donGia > 0 ? donGia : 0;
     }
 
     public Date getNgaySanXuat() {
@@ -77,7 +73,7 @@ public class HangThucPham {
     }
 
     public void setNgaySanXuat(Date ngaySanXuat) {
-        this.ngaySanXuat = ngaySanXuat;
+        this.ngaySanXuat = ngaySanXuat != null ? ngaySanXuat : new Date(0);
     }
 
     public Date getNgayHetHan() {
@@ -99,17 +95,18 @@ public class HangThucPham {
     public String toString() {
         return "Ma hang" + maHang + ", tenHang=" + tenHang + ", donGia=" + currencyFormat.format(this.donGia)
                 + ", ngaySanXuat="
-                + currencyFormat.format(this.ngaySanXuat) + ", ngayHetHan=" + dateFormat.format(this.ngayHetHan);
+                + dateFormat.format(this.ngaySanXuat) + ", ngayHetHan=" + dateFormat.format(this.ngayHetHan);
     }
 
     public static void main(String[] args) {
         try {
-            Date ngaySanXuat = dateFormat.parse("10/10/2023");
-            Date ngayHetHan = dateFormat.parse("10/10/2024");
+            Date ngaySanXuat = (Date) dateFormat.parse("10/10/2023");
+            Date ngayHetHan = (Date) dateFormat.parse("10/10/2024");
+            HangThucPham hangThucPham = new HangThucPham("001", "Sua", 1500, ngaySanXuat, ngayHetHan);
+            System.out.println(hangThucPham);
             HangThucPham hangThucPham2 = new HangThucPham("002");
             System.out.println(hangThucPham2);
         } catch (ParseException e) {
-            // TODO: handle exception
             e.printStackTrace();
         }
     }
