@@ -28,8 +28,9 @@ public class ChuyenXeNoiThanh extends ChuyenXe {
     }
 
     @Override
-    public String toString() {
-        return "So tuyen=" + soTuyen + ", soKmDiDuoc=" + soKmDiDuoc;
+    public void xuatThongTin() {
+        super.xuatThongTin();
+        System.out.println(",So tuyen " + soTuyen + "So km di duoc : " + soKmDiDuoc);
     }
 
 }

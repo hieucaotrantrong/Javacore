@@ -50,14 +50,13 @@ public class ChuyenXe {
     public void setDoanhThu(double doanhThu) {
         this.doanhThu = doanhThu;
     }
+
     /*
-     * GetSet
+     * xuat thong tin
      */
-
-    @Override
-    public String toString() {
-        return "ma so Chuyen" + maSoChuyen + ", hoTenTaixe=" + hoTenTaixe + ", soXe=" + soXe + ", doanhThu="
-                + doanhThu;
+    public void xuatThongTin() {
+        System.out.println(
+                "Ma so chuyen" + maSoChuyen + ", Ho ten tai xe : " + hoTenTaixe + ",So xe : " + soXe + ",Doanh thu : "
+                        + doanhThu);
     }
-
 }
