@@ -1,7 +1,9 @@
 package Buoi17;
 
 public class Cat extends Animal {
-    // Ghì đè phương thức
+    /*
+     * ghi đè phương thức trong java
+     */
     public Cat() {
         super("Meo");
     }

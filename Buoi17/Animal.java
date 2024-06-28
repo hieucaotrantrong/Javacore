@@ -3,8 +3,9 @@ package Buoi17;
 public class Animal {
     protected String name;
 
-    // Ghì đè phương thức
-    // constructor
+    /*
+     * ghi đè phương thức trong java
+     */
     public Animal(String name) {
         this.name = name;
     }
@@ -27,6 +28,6 @@ public class Animal {
     }
 
     public void sleep() {
-        System.out.println("Toi dang ngu");
+        System.out.println("Toi dang ngu...");
     }
 }
