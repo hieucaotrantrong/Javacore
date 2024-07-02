@@ -24,7 +24,7 @@ public class DanhSachSinhVien {
     }
 
     /*
-     * In danh sách sinh viên qua màn hình
+     * In danh sách sinh viên ra màn hình
      */
     public void inDanhSachSinhVien() {
         for (SinhVien sinhVien : danhSach) {
@@ -63,7 +63,7 @@ public class DanhSachSinhVien {
     /*
      * Xóa 1 xinh viên ra khỏi danh sách dựa trên mã sinh viên
      */
-       // Phương thức sai chờ xử lí
+    // Phương thức sai chờ xử lí
     public boolean xoaSinhVien(SinhVien sinhVien) {
         return this.danhSach.remove(sinhVien);
     }
