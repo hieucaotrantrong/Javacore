@@ -1,5 +1,9 @@
 package Buoi27;
 
+/*
+Ngắn xếp trong java
+ * Stack trong java collection
+ */
 import java.util.Scanner;
 import java.util.Stack;
 
