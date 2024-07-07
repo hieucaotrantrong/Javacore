@@ -11,7 +11,7 @@ public class VdPriorityQueue {
         danhSachSv.offer("nghia nguyen 4");
         danhSachSv.offer("Dinh Thi Phuong 2");
         danhSachSv.offer("Tuan Hung 3");
-        
+
         while (true) {
             String ten = danhSachSv.poll();
             if (ten == null) {
