@@ -8,7 +8,7 @@ public class Exemple_LinkList {
         cars.offer("Volco");
         cars.offer("Bmw");
         cars.offer("Ford");
-        cars.offer("Maxda");
+        cars.offer("Mazda");
         System.out.println(cars);
     }
 }
