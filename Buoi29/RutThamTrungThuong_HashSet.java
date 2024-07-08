@@ -2,6 +2,7 @@ package Buoi29;
 
 /*
  * Hiểu rõ cấu trúc set trong java
+ * HashSet
  */
 import java.util.Arrays;
 import java.util.HashSet;
