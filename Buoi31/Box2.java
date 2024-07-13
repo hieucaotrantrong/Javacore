@@ -1,5 +1,8 @@
 package Buoi31;
 
+/*
+ * Tìm hiểu generric trong java
+ */
 public class Box2<T> {
     private T value;
 
