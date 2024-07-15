@@ -1,5 +1,7 @@
 package Buoi31;
-
+/*
+ * Tìm hiểu generric trong java
+ */
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.TreeSet;
