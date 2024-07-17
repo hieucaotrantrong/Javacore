@@ -64,13 +64,13 @@ public class ViduFile {
          * In ra danh sách cac file con
          */
         if (this.file.isDirectory()) {
-            System.out.println("Cac,tap tin con/thu muc con la: ");
+            System.out.println("Cac tap tin con/thu muc con la: ");
             File[] mangCon = this.file.listFiles();
             for (File file : mangCon) {
                 System.out.println(file.getAbsolutePath());
             }
         } else if (this.file.isFile()) {
-            System.out.println("Day la tap tin , khong co du  ben trong: ");
+            System.out.println("Day la tap tin , khong co du lieu ben trong: ");
         }
     }
 

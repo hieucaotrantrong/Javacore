@@ -15,7 +15,7 @@ public class DeQueue {
         danhSachSv.offerFirst("Cao Hieu 0");
         while (true) {
             String ten = danhSachSv.poll();
-            if (ten == null) {  
+            if (ten == null) {
                 break;
             }
             System.out.println(ten);

@@ -1,4 +1,5 @@
 package Buoi31;
+
 /*
  * Tìm hiểu generric trong java
  */
