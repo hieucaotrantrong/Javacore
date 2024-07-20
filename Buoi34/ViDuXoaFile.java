@@ -35,12 +35,12 @@ public class ViDuXoaFile {
                     try {
                         Files.deleteIfExists(p);
                         System.out.println("Da xoa: " + p);
-                    } catch (Exception e) {
+                    } catch (IOException e) {
                         // TODO: handle exception
                         e.printStackTrace();
                     }
                 });
-            } catch (Exception e) {
+            } catch (IOException e) {
                 // TODO: handle exception
                 e.printStackTrace();
             }
