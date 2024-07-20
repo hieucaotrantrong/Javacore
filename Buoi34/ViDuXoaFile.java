@@ -6,6 +6,7 @@ import java.nio.file.FileSystem;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Comparator;
 
 public class ViDuXoaFile {
     public static void xoaFile(File fx) {
@@ -26,11 +27,31 @@ public class ViDuXoaFile {
         }
     }
 
+    public static void xoaFile2(Path path) {
+        boolean condition = true;
+        if (condition) {
+            try {
+                Files.walk(path).sorted(Comparator.reverseOrder()).forEach(p -> {
+                    try {
+                        Files.deleteIfExists(p);
+                        System.out.println("Da xoa: " + p);
+                    } catch (Exception e) {
+                        // TODO: handle exception
+                        e.printStackTrace();
+                    }
+                });
+            } catch (Exception e) {
+                // TODO: handle exception
+                e.printStackTrace();
+            }
+        }
+    }
+
     public static void main(String[] args) {
         // sử dụng class file de xoa tạp tin hoac thu muc
         File f0 = new File("E:\\FileTH\\Java\\Buoi34\\F0");
         File f0_1 = new File("E:\\FileTH\\Java\\Buoi34\\F0_1");
-        File f_vidu = new File("E:\\FileTH\\Java\\Buoi34\\ViDu.txt");
+        File f_vidu = new File("E:\\FileTH\\Java\\Buoi34");
         f0.deleteOnExit(); // => xóa không được vì chưa có thư mục và tập tin
         /*
          * f0_1.deleteOnExit();// => xóa được vì thư mục rỗng
@@ -40,11 +61,11 @@ public class ViDuXoaFile {
          */
         // sử dụng class file để xóa tập tin và thư mục
 
-        // Path path = f0.toPath();
+        Path path = f0.toPath();
         Path path_1 = f0_1.toPath();
         Path path_2 = f_vidu.toPath();
         try {
-            // Files.deleteIfExists(path);
+            Files.deleteIfExists(path);
             Files.deleteIfExists(path_1);
             Files.deleteIfExists(path_2);
         } catch (IOException e) {
