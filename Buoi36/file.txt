@@ -1,0 +1,5 @@
+Xin chao minh la hieu
+Du lieu
+3.14
+Toi chua thay ai thuc khuya day som ma than phien ve cuoc song cua minh ca
+Student [id=100, name=Cao Tran trong hieu]
