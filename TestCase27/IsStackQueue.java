@@ -8,4 +8,6 @@ public interface IsStackQueue {
     public boolean isFull();
 
     public boolean isEmpty();
+
+    public void show();
 }
