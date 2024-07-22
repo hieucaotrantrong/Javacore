@@ -10,4 +10,5 @@ public interface IsStackQueue {
     public boolean isEmpty();
 
     public void show();
+
 }
