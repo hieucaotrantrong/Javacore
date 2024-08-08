@@ -66,13 +66,8 @@ public class SinhVien implements Comparable<SinhVien> {
 
     @Override
     public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((maSinhVien == null) ? 0 : maSinhVien.hashCode());
-        result = prime * result + ((hoVaTen == null) ? 0 : hoVaTen.hashCode());
-        result = prime * result + namSinh;
-        result = prime * result + Float.floatToIntBits(diemTrungBinh);
-        return result;
+
+        return Objects.hash(diemTrungBinh, hoVaTen, maSinhVien, namSinh);
     }
 
     @Override
@@ -87,4 +82,3 @@ public class SinhVien implements Comparable<SinhVien> {
         return Objects.equals(maSinhVien, other.maSinhVien);
     }
 }
-
