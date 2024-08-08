@@ -1,5 +1,7 @@
 package Buoi26;
 
+import java.util.Objects;
+
 /*
  * Bài tập quản lý danh sách sinh viên sử dụng ArrayList
  */
@@ -82,22 +84,7 @@ public class SinhVien implements Comparable<SinhVien> {
         if (getClass() != obj.getClass())
             return false;
         SinhVien other = (SinhVien) obj;
-        if (maSinhVien == null) {
-            if (other.maSinhVien != null)
-                return false;
-        } else if (!maSinhVien.equals(other.maSinhVien))
-            return false;
-        if (hoVaTen == null) {
-            if (other.hoVaTen != null)
-                return false;
-        } else if (!hoVaTen.equals(other.hoVaTen))
-            return false;
-        if (namSinh != other.namSinh)
-            return false;
-        if (Float.floatToIntBits(diemTrungBinh) != Float.floatToIntBits(other.diemTrungBinh))
-            return false;
-        return true;
+        return Objects.equals(maSinhVien, other.maSinhVien);
     }
-
-   
 }
+
