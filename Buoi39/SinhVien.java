@@ -1,5 +1,8 @@
-package Buoi38;
+package Buoi39;
 
+/*
+ * Bài 74 Cách đọc đối tượng từ tập tin
+ */
 import java.io.Serializable;
 import java.util.Objects;
 

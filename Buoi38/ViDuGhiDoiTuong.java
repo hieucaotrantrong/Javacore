@@ -5,8 +5,6 @@ import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 
-import Buoi36.Student;
-
 public class ViDuGhiDoiTuong {
     public static void main(String[] args) {
         try {
