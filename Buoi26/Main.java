@@ -14,6 +14,7 @@ public class Main {
           "1.Them sinh vien vao danh sach.\n" +
               "2.In danh sach sinh vien ra man hinh.\n" +
               "3.Kiem tra danh sach co rong hay khong.\n" +
+              "4.Lay ra so luong sinh vien co trong danh sach.\n" +
               "5.Lam rong danh sach sinh vien.\n" +
               "6.Kiem tra sinh vien co ton tai trong danh sach hay khong,dua tren ma sinh vien.\n" +
               "7.Xoa mot sinh vien ra khoi danh sach dua tren ma sinh vien .\n" +

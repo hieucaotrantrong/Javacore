@@ -27,14 +27,14 @@ public class DanhSachSinhVien {
     }
 
     /*
-     * Thêm sinh viên vào danh sách
+     * 1 Thêm sinh viên vào danh sách
      */
     public void themSinhVien(SinhVien sinhVien) {
         this.danhSach.add(sinhVien);
     }
 
     /*
-     * In danh sách sinh viên ra màn hình
+     * 2 In danh sách sinh viên ra màn hình
      */
     public void inDanhSachSinhVien() {
         for (SinhVien sinhVien : danhSach) {
@@ -43,7 +43,7 @@ public class DanhSachSinhVien {
     }
 
     /*
-     * Kiểm tra danh sách sinh viên có rỗng hay không
+     * 3 Kiểm tra danh sách sinh viên có rỗng hay không
      */
     public boolean kiemTraDanhSachRong() {
         return this.danhSach.isEmpty();
@@ -70,9 +70,6 @@ public class DanhSachSinhVien {
         return this.danhSach.contains(sinhVien);
     }
 
-    /*
-     * Xóa 1 xinh viên ra khỏi danh sách dựa trên mã sinh viên
-     */
     // Phương thức sai chờ xử lí
     public boolean xoaSinhVien(SinhVien sinhVien) {
         return this.danhSach.remove(sinhVien);
