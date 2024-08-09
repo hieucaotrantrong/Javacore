@@ -138,11 +138,12 @@ public class DanhSachSinhVien {
             SinhVien sinhVien = null;
             while (true) {
                 Object object = objectInputStream.readObject();
-                if (sinhVien != null) {
-                    this.danhSach.add(sinhVien);
-                }
-                if (sinhVien == null) {
+                if (object == null) {
                     break;
+                }
+                if (object != null) {
+                    sinhVien = (SinhVien) object;
+                    this.danhSach.add(sinhVien);
                 }
             }
             objectInputStream.close();
